@@ -10,13 +10,15 @@ public class Fractions{
         double numerator2 = input.nextDouble();
         System.out.print("Enter second denominator: ");
         double denominator2 = input.nextDouble();
-        
-        double sum = (numerator1 / denominator1) + (numerator2 / denominator2);
-        double difference = (numerator1 / denominator1) - (numerator2 / denominator2);
-        double product = (numerator1 / denominator1) * (numerator2 / denominator2);
-        double quotient = (numerator1 / denominator1) / (numerator2 / denominator2);
+        double firstFraction = numerator1 / denominator1;
+        double secondFraction = numerator2 / denominator2;
 
-        System.out.printf("Fractions are %d/%d and %d/%d%n", numerator1, denominator1, numerator2, denominator2);
+        double sum = firstFraction + secondFraction;
+        double difference = firstFraction - secondFraction;
+        double product = firstFraction * secondFraction;
+        double quotient = firstFraction / secondFraction;
+
+        System.out.printf("Fractions are %.2f/%.2f and %.2f/%.2f%n", numerator1, denominator1, numerator2, denominator2);
 
         if (denominator1 == 0 || denominator2 == 0){
             System.out.printf("can't divide by 0");
