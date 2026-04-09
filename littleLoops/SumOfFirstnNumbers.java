@@ -8,7 +8,7 @@ public class SumOfFirstnNumbers{
         int sum = 0;
         while (i <= userInput)
         {
-            sum = (userInput * (userInput + 1)) / 2;
+            sum += i;
             i++;
         }
         System.out.printf("Sum of first %d numbers = %d%n", userInput, sum);
