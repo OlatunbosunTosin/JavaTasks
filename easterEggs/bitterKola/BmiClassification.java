@@ -20,5 +20,5 @@ public class BmiClassification{
         else if(BMI > 30) {
         System.out.printf("Obese%n");
         }
-}
+    } 
 }
