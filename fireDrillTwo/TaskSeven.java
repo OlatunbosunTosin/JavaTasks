@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TaskSix{
+public class TaskSeven{
     public static void main(String[] args){
         Scanner inputCollector = new Scanner(System.in);
         int sum = 0;
@@ -15,6 +15,6 @@ public class TaskSix{
             average = (double)sum / count;
             
         }
-        }System.out.printf("Average = %.2f%n", average);
+        }System.out.printf("Sum = %d, Average = %.2f%n", sum, average);
 }
 }
