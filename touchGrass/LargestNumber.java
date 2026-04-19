@@ -7,14 +7,18 @@ public class LargestNumber{
         int largest = number;
         int count = 0;
         while (number != 0){
-            System.out.print("Enter a number: ");
-            number = numberCollector.nextInt();
-            count++;
+
             if (number > largest){
                 largest = number;
+                count = 1;
             }
+            else if (number == largest){
+                count += 1;
+            }
+            System.out.print("Enter a number: ");
+            number = numberCollector.nextInt();
             
-        }System.out.print(largest);
+        }System.out.printf("Largest number is %d and it occurred %d time", largest, count);
     }
 }
     
