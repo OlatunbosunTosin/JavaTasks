@@ -15,6 +15,9 @@ public class Methods{
         int factorOfInteger = factorOf(20);
         System.out.printf("number of factors is %d%n", factorOfInteger);
 
+        boolean perfectSquare = isPerfectSquare(225);
+        System.out.println(perfectSquare);
+
         boolean palindrome = isPalindrome(54145);
         System.out.println(palindrome);
 
@@ -68,6 +71,17 @@ public class Methods{
             }  
         }return count;
   
+    }
+
+    public static boolean isPerfectSquare(int number){
+        double root = Math.sqrt(number);
+        double square = root * root;
+        if(square == number){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public static boolean isPalindrome(int number){
