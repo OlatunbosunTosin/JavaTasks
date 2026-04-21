@@ -6,6 +6,9 @@ public class Methods{
         boolean evenNumber = isEven(11);
         System.out.println(evenNumber);
 
+        boolean primeNumber = isPrimeNumber(7);
+        System.out.println(primeNumber);
+
         int minus = subtract(3,7);
         System.out.printf("difference is %d%n" ,minus);
 
@@ -45,6 +48,23 @@ public class Methods{
             return false;
         }
     
+    }
+
+    public static boolean isPrimeNumber(int number){
+        int count = 0;
+        int factor = 1; 
+        for (;factor <= number; factor++){
+            if (number % factor == 0){
+                count++;
+            } 
+        }
+        if (count == 2){
+            return true;
+        }
+        else if (count > 2){
+            
+        }   return false;
+ 
     }
 
     public static int subtract(int numberOne, int numberTwo){
