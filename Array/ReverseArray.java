@@ -2,21 +2,29 @@ public class ReverseArray {
 
     public static void main(String[] args) {
 
-        int[] numbers = {1, 2, 10, 4, 5};
+        int[] number = {1, 2, 10, 4, 5};
             
-        int arrayReverse = reverseArray(numbers);
+      reverseArray(number);
         
-        System.out.print(arrayReverse);
+        
 
 }
-    public static int reverseArray(int[] numberSet){
-        int number = numberSet.length - 1;
-        for ( ;number > 0; number--){
+    public static void reverseArray(int[] numberSet){
         
-            System.out.print(numberSet[number] + " ");
+        int firstIndex = 0;
+        int lastIndex = numberSet.length -1;
+        int container = numberSet[0];
+        
+        for (; firstIndex < lastIndex; firstIndex++){
 
-        }return numberSet[number];
+            container = numberSet[firstIndex];
+            numberSet[firstIndex] = numberSet[lastIndex];
+            numberSet[lastIndex] = container;
+            
+          lastIndex--;
 
+        }   
+            //System.out.print(numberSet[]);
     }
 
 }
