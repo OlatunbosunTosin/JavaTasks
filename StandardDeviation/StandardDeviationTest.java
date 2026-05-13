@@ -13,7 +13,7 @@ public class StandardDeviationTest{
         
             
         double[] scores = {2,4.5,7.5,5,9,10,5};
-        double expectedMeanScore = StandardDeviation.getMeanOf(numberTwo);
+        double expectedMeanScore = StandardDeviation.getMeanOf(scores);
         double actualMeanScore = 6.1429;
         assertEquals(expectedMeanScore, actualMeanScore); 
     
@@ -29,7 +29,7 @@ public class StandardDeviationTest{
         
         double[] scores = {2,4.5,7.5,5,9,10,5};
         double expectedMeanDeviationScore = StandardDeviation.getMeanDeviationOf(scores);
-        double actualMeanDEviationScore = 47.3571;
+        double actualMeanDeviationScore = 47.3571;
         assertEquals(expectedMeanDeviationScore, actualMeanDeviationScore);  
     
     }
