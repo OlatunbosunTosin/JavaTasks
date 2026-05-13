@@ -12,10 +12,10 @@ public class StandardDeviationTest{
         assertEquals(expectedMean, actualMean);  
         
             
-        double[] number2 = {2,4.5,7.5,5,9,10,5};
-        double expectedMean2 = StandardDeviation.getMeanOf(number2);
-        double actualMean2 = 6.1429;
-        assertEquals(expectedMean2, actualMean2); 
+        double[] scores = {2,4.5,7.5,5,9,10,5};
+        double expectedMeanScore = StandardDeviation.getMeanOf(numberTwo);
+        double actualMeanScore = 6.1429;
+        assertEquals(expectedMeanScore, actualMeanScore); 
     
     }
     
@@ -23,14 +23,14 @@ public class StandardDeviationTest{
     public void testForCorrectSumOfMeanDeviationOfNumber(){
     
         double[] numbers = {1,2,3,4,5};
-        double expectedMeanDEviation = StandardDeviation.getMeanDeviationOf(numbers);
-        double actualMeanDEviation = 10.0;
-        assertEquals(expectedMeanDEviation, actualMeanDEviation);  
+        double expectedMeanDeviation = StandardDeviation.getMeanDeviationOf(numbers);
+        double actualMeanDeviation = 10.0;
+        assertEquals(expectedMeanDeviation, actualMeanDeviation);  
         
-        double[] number2 = {2,4.5,7.5,5,9,10,5};
-        double expectedMeanDEviation2 = StandardDeviation.getMeanDeviationOf(number2);
-        double actualMeanDEviation2 = 47.3571;
-        assertEquals(expectedMeanDEviation2, actualMeanDEviation2);  
+        double[] scores = {2,4.5,7.5,5,9,10,5};
+        double expectedMeanDeviationScore = StandardDeviation.getMeanDeviationOf(scores);
+        double actualMeanDEviationScore = 47.3571;
+        assertEquals(expectedMeanDeviationScore, actualMeanDeviationScore);  
     
     }
     
@@ -42,10 +42,10 @@ public class StandardDeviationTest{
         double actualVariance = 2.0;
         assertEquals(expectedVariance, actualVariance);  
             
-        double[] number2 = {2,4.5,7.5,5,9,10,5};
-        double expectedVariance2 = StandardDeviation.getVarianceOf(number2);
-        double actualVariance2 = 6.7653;
-        assertEquals(expectedVariance2, actualVariance2); 
+        double[] scores = {2,4.5,7.5,5,9,10,5};
+        double expectedVarianceScore = StandardDeviation.getVarianceOf(scores);
+        double actualVarianceScore = 6.7653;
+        assertEquals(expectedVarianceScore, actualVarianceScore); 
   
     }
     
@@ -57,10 +57,10 @@ public class StandardDeviationTest{
         double actualStandardDeviation = 1.4142;
         assertEquals(expectedStandardDeviation, actualStandardDeviation); 
         
-        double[] number2 = {2,4.5,7.5,5,9,10,};
-        double expectedStandardDeviation2 = StandardDeviation.getStandardDeviationOf(number2);
-        double actualStandardDeviation2 = 2.7639;
-        assertEquals(expectedStandardDeviation2, actualStandardDeviation2);   
+        double[] scores = {2,4.5,7.5,5,9,10,};
+        double expectedStandardDeviationScore = StandardDeviation.getStandardDeviationOf(scores);
+        double actualStandardDeviationScore = 2.7639;
+        assertEquals(expectedStandardDeviationScore, actualStandardDeviationScore);   
   
     }
 
