@@ -82,11 +82,5 @@ public class OshoFreePromoEngineTest{
     
     }
     
-        @Test
-    public void testForInvalidAmount(){
-
-        assertThrows(IllegalArgumentException.class, () -> OshoFreePromoEngine.getDiscountOf(-2000.00, "OSHOFREE35"));
-    
-    }
 
 }

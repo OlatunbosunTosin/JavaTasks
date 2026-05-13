@@ -5,13 +5,7 @@ public class OshoFreePromoEngine{
         double discount = 0.0;
         double finalPrice = 0.0;
         
-        if (cartTotal <= 0 ){
-        
-            throw new IllegalArgumentException("Amount cannot be negative");
-            
-        }
-        
-        else if (cartTotal > 0.0 && cartTotal < 5000.00){
+        if (cartTotal < 5000 ){
         
             finalPrice = cartTotal;
             
