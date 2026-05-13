@@ -7,8 +7,8 @@ public class StandardDeviation{
         for(double number : numbers){
         
             sum += number;
-            mean = sum / numbers.length;
-        }
+            
+        }mean = sum / numbers.length;
         
         return Math.round(mean * 10000.0) / 10000.0;
     
