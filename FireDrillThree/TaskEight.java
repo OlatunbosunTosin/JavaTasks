@@ -24,9 +24,9 @@ public class TaskEight{
         int minimum = evenIndexNumber[0];
         for(; count < evenIndexNumber.length; count++){
 
-                if (evenIndexNumber[count] < minimum){
-                    minimum = evenIndexNumber[count];
-                } 
+            if (evenIndexNumber[count] < minimum){
+                minimum = evenIndexNumber[count];
+            } 
         } return minimum;
  
     }

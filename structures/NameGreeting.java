@@ -8,8 +8,8 @@ public class NameGreeting{
 
     public static String greet(String name){
         
-        return "Hello, " + name + "!";
+        return "\'Hello, " + name + "!\'";
                
     }
-
 }
+

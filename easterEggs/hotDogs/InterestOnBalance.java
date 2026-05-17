@@ -6,7 +6,7 @@ public class InterestOnBalance{
         double balance = input.nextDouble();
         System.out.print("Enter annual interest rate: ");
         double annualInterestRate = input.nextDouble();
-        double Interest = balance * (annualInterestRate / 1200);
+        double Interest = balance * (annualInterestRate / 12);
         System.out.printf("Interest for next month is %.2f%n" , Interest);
     }
 }

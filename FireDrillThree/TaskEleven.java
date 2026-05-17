@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TaskNine{
+public class TaskEleven{
 
 
     public static int[] oddIndex(int[] arrays){
@@ -13,22 +13,20 @@ public class TaskNine{
                 index++;
             }    
 
-
         }return odd;
-    
     }
 
-    public static int minimumNumber(int[] arrays){
+    public static int maximumNumber(int[] arrays){
         int[] oddIndexNumber = oddIndex(arrays);
         int count = 0;
 
-        int minimum = oddIndexNumber[0];
+        int maximum = oddIndexNumber[0];
         for(; count < oddIndexNumber.length; count++){
 
-            if (oddIndexNumber[count] < minimum){
-                minimum = oddIndexNumber[count];
-            } 
-        } return minimum;
+                if (oddIndexNumber[count] > maximum){
+                    maximum = oddIndexNumber[count];
+                } 
+        } return maximum;
  
     }
 

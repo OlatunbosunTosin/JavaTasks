@@ -14,10 +14,11 @@ public class TwoLargestNumber{
 
             if (number > largest){
                  
+                secondlargest = largest;
                 largest = number;
 
             }
-            if (secondlargest < largest && secondlargest > number){
+            else if (number > secondlargest){
                 secondlargest = number;
             }
   

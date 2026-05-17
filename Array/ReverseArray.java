@@ -2,9 +2,9 @@ public class ReverseArray {
 
     public static void main(String[] args) {
 
-        int[] number = {1, 2, 10, 4, 5};
+        int[] number = {1, 2, 10,22,22,33,44,5,56,66, 4, 5};
             
-      reverseArray(number);
+        reverseArray(number);
         
         
 
@@ -22,9 +22,9 @@ public class ReverseArray {
             numberSet[lastIndex] = container;
             
           lastIndex--;
-
+        
         }   
-            //System.out.print(numberSet[]);
+           System.out.println(java.util.Arrays.toString(numberSet));
     }
 
 }
